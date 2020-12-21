@@ -98,9 +98,7 @@ public class Animation3{
      	 //System.out.println(ANSI_RESET);
    }// end animate
 
-/**
- * a quick process that clears the screen  Currently only for windows users.
- */
+
     public static void cls() throws IOException, InterruptedException {
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
     }//end cls
