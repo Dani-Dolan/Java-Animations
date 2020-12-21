@@ -8,9 +8,7 @@ public class AnimationFile2{
 
   public static void main(String[]args) throws InterruptedException, IOException
   {
-    // we use throws InterruptedException and IOException because we talk to the
-    // system opeing files and sleeing.
-    //create arrays to hold each sprite
+    
     ArrayList<String> sprite1 = new ArrayList<String>();
 	  ArrayList<String> sprite2 = new ArrayList<String>();
 	  ArrayList<String> sprite3 = new ArrayList<String>();
@@ -79,12 +77,11 @@ public class AnimationFile2{
 
    public static void GetSprite(String fileName, ArrayList<String> sprite)throws IOException
 	{
-	// In this program we will the "filename" file for this directory, if one exists.
+	
 	try
 	{
 		BufferedReader in = new BufferedReader(new FileReader(fileName));
-		//Then, you can use in.readLine(); to read a single line at a time.
-    //To read until the end, write a while loop as such:
+		
 		int i=0;
 		String line;
 		while((line = in.readLine()) != null)
@@ -102,10 +99,5 @@ public class AnimationFile2{
 		}// end class
 	}//end GetSprite
 
-  /**
-   * a quick process that clears the screen  Currently only for windows users.
-   */
-      public static void cls() throws IOException, InterruptedException {
-          new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-      }//end cls
+ 
 }//end class
