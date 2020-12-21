@@ -55,9 +55,7 @@ public class AnimationFile{
 
    public static void GetSprite(String fileName, ArrayList<String> sprite) throws IOException
 	{
-	// In this program we will the "fileName" file for this directory, if one exists.
-  //the throws IOException is because we are talking to the system opening and closing files
-  // the try is incase the file cant be found.
+	
 	try
 	{
 		BufferedReader in = new BufferedReader(new FileReader(fileName));
@@ -70,7 +68,7 @@ public class AnimationFile{
 			i++;
 		}
 	in.close();
-  // after reading a file, we need to close the reader
+  
 	}
 	// If the file is not found.
         catch(FileNotFoundException ex) {
